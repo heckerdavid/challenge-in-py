@@ -15,7 +15,7 @@ def raised_to_the_third(array):
     
     return new_array
 
-print(raised_to_the_third([1, 2, 3, 4, 5]))
+# print(raised_to_the_third([1, 2, 3, 4, 5]))
 
 
 # /* ------------------------------------------------------------------------------------------------
@@ -24,7 +24,12 @@ print(raised_to_the_third([1, 2, 3, 4, 5]))
 # Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1. 
 # ------------------------------------------------------------------------------------------------ */
 
+def add_one(array):
 
+    return list(map(lambda n : n + 1, array))
+
+
+print(add_one([1, 2, 3, 4, 5]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
