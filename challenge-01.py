@@ -115,7 +115,7 @@ def create_list(array):
 
     return shopping_list
 
-print(create_list(formatted_list))
+# print(create_list(formatted_list))
 
 
 
@@ -131,3 +131,19 @@ print(create_list(formatted_list))
 
 # Return the resulting output array.
 
+def fizzbuzz(array):
+    output = []
+
+    for number in array:
+        if number % 3 == 0 and number % 5 == 0:
+            output.append('Fizz Buzz')
+        elif number % 3 == 0:
+            output.append('Fizz')
+        elif number % 5 == 0:
+            output.append('Buzz')
+        else:
+            output.append(number)
+
+    return output
+
+print(fizzbuzz([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 20, 21, 30]))
