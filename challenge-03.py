@@ -58,7 +58,7 @@ def odd_values(array):
     return list(filter(lambda n : n % 2 != 0, array))
 
 
-print(odd_values([1,2,3]))
+# print(odd_values([1,2,3]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 5
@@ -68,7 +68,12 @@ print(odd_values([1,2,3]))
 # For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 # ------------------------------------------------------------------------------------------------ */
 
+def not_in_first_array(array1, array2):
 
+    return list(filter(lambda n : n not in array1, array2))
+
+
+print(not_in_first_array([1, 2 ,3], [1,2,3,4]))
 
 
 # /* ------------------------------------------------------------------------------------------------
