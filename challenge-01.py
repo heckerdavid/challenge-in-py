@@ -21,7 +21,15 @@ def add_one(array):
 
 # Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 
+def add_exclamation(array):
+    new_array = []
 
+    for string in array:
+        new_array.append(string + '!')
+
+    return new_array
+
+print(add_exclamation(['hello', 'world', 'now', 'in', 'python']))
 
 
 # CHALLENGE 3
