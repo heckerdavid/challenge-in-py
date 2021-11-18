@@ -47,7 +47,8 @@ def all_upper_case(array):
     
     return new_array
 
-print(all_upper_case(['hello', 'world', 'now', 'in', 'python']))
+# print(all_upper_case(['hello', 'world', 'now', 'in', 'python']))
+
 
 
 # CHALLENGE 4
@@ -75,6 +76,18 @@ print(all_upper_case(['hello', 'world', 'now', 'in', 'python']))
 
 # Return the modified array.
 
+def add_values(array, value):
+    array.append(value)
+
+def add_numbers(number, array, times, callback):
+
+    for i in range(times):
+        callback(array, number)
+
+    return array
+
+
+# print(add_numbers(1, [], 8, add_values))
 
 
 
@@ -83,16 +96,26 @@ print(all_upper_case(['hello', 'world', 'now', 'in', 'python']))
 # Write a function named createList that takes in an array of the current store intentory.
 
 # The inventory is formatted like this:
-# [
-#   { name: 'apples', available: true },
-#   { name: 'pears', available: true },
-#   { name: 'oranges', available: false },
-#   { name: 'bananas', available: true },
-#   { name: 'blueberries', available: false }
-# ]
+formatted_list = [
+  { 'name': 'apples', 'available': True },
+  { 'name': 'pears', 'available': True },
+  { 'name': 'oranges', 'available': False },
+  { 'name': 'bananas', 'available': True },
+  { 'name': 'blueberries', 'available': False }
+]
 
 # This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 
+def create_list(array):
+    shopping_list = []
+
+    for item in array:
+        if item['available']:
+            shopping_list.append(item['name'])
+
+    return shopping_list
+
+print(create_list(formatted_list))
 
 
 
