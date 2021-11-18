@@ -169,7 +169,7 @@ def extract_abilities(array):
     return list(map(lambda item : item['ability']['name'], array))
 
 
-print(extract_abilities(snorlax_abilities['abilities']))
+# print(extract_abilities(snorlax_abilities['abilities']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 10 - Stretch Goal
@@ -183,34 +183,40 @@ print(extract_abilities(snorlax_abilities['abilities']))
 # Here is an example of a single array element: { name: 'speed', total: 35 }
 # ------------------------------------------------------------------------------------------------ */
 
-# const snorlaxStats = {
-#   stats: [
-#     {
-#       stat: {
-#         url: 'https://pokeapi.co/api/v2/stat/6/',
-#         name: 'speed',
-#       },
-#       effort: 5,
-#       baseStat: 30,
-#     },
-#     {
-#       stat: {
-#         url: 'https://pokeapi.co/api/v2/stat/5/',
-#         name: 'special-defense',
-#       },
-#       effort: 2,
-#       baseStat: 110,
-#     },
-#     {
-#       stat: {
-#         url: 'https://pokeapi.co/api/v2/stat/4/',
-#         name: 'special-attack',
-#       },
-#       effort: 9,
-#       baseStat: 65,
-#     },
-#   ],
-#   name: 'snorlax',
-#   weight: 4600,
-# };
+snorlax_stats = {
+  'stats': [
+    {
+      'stat': {
+        'url': 'https://pokeapi.co/api/v2/stat/6/',
+        'name': 'speed',
+      },
+      'effort': 5,
+      'baseStat': 30,
+    },
+    {
+      'stat': {
+        'url': 'https://pokeapi.co/api/v2/stat/5/',
+        'name': 'special-defense',
+      },
+      'effort': 2,
+      'baseStat': 110,
+    },
+    {
+      'stat': {
+        'url': 'https://pokeapi.co/api/v2/stat/4/',
+        'name': 'special-attack',
+      },
+      'effort': 9,
+      'baseStat': 65,
+    },
+  ],
+  'name': 'snorlax',
+  'weight': 4600,
+};
 
+def extract_stats(array):
+
+    return list(map(lambda n : {'name': n['stat']['name'], 'total': n['effort'] + n['baseStat']}, array))
+
+
+# print(extract_stats(snorlax_stats['stats']))
