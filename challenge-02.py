@@ -58,7 +58,7 @@ def for_loop_two_to_the(array):
 
     return list(map(lambda n : 2 ** n, array))
 
-print(for_loop_two_to_the([1, 2, 3, 4, 5]))
+# print(for_loop_two_to_the([1, 2, 3, 4, 5]))
 
 
 
@@ -69,7 +69,11 @@ print(for_loop_two_to_the([1, 2, 3, 4, 5]))
 # Write a function named forEachTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 4, but uses forEach instead of a for loop.
 # ------------------------------------------------------------------------------------------------ */
 
+def for_each_two_to_the(array):
 
+    return list(map(lambda n : 2 ** n, array))
+
+# print(for_each_two_to_the([1, 2, 3, 4, 5]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 6
