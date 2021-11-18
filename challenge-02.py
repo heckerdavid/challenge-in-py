@@ -41,7 +41,7 @@ def add_question(array):
 
     return list(map(lambda string : string + '?', array))
 
-print(add_question(['hello', 'world', 'now', 'in', 'python']))
+# print(add_question(['hello', 'world', 'now', 'in', 'python']))
 
 
 # /* ------------------------------------------------------------------------------------------------
@@ -53,6 +53,13 @@ print(add_question(['hello', 'world', 'now', 'in', 'python']))
 
 # For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and 2 ^ 3 = 8.
 # ------------------------------------------------------------------------------------------------ */
+
+def for_loop_two_to_the(array):
+
+    return list(map(lambda n : 2 ** n, array))
+
+print(for_loop_two_to_the([1, 2, 3, 4, 5]))
+
 
 
 
