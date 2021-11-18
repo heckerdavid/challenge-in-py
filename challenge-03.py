@@ -28,7 +28,7 @@ def type_num(array):
     return list(filter(lambda n : isinstance(n, int), array))
 
 
-print(type_num([3, 'bob', 1]))
+# print(type_num([3, 'bob', 1]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
@@ -38,8 +38,12 @@ print(type_num([3, 'bob', 1]))
 # For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 # ------------------------------------------------------------------------------------------------ */
 
+def contains_and(array):
+
+    return list(filter(lambda n : 'and' in n, array))
 
 
+print(contains_and(['panda', 'ran', 'and']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
