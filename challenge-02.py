@@ -114,19 +114,12 @@ def char_code(array):
 # For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 # ------------------------------------------------------------------------------------------------ */
 
-def even_test(num):
-    if num % 2 == 0:
-        return 'even'
-    else:
-        return 'odd'
-
-
 def even_odd(array):
 
     return list(map(lambda n : 'even' if n % 2 == 0 else 'odd', array ))
 
 
-print(even_odd([1, 2, 3]))
+# print(even_odd([1, 2, 3]))
 
 
 # /* ------------------------------------------------------------------------------------------------
@@ -140,38 +133,43 @@ print(even_odd([1, 2, 3]))
 # extractAbilities(snorlaxAbilities.abilities)
 # ------------------------------------------------------------------------------------------------ */
 
-# const snorlaxAbilities = {
-#   abilities: [
-#     {
-#       slot: 3,
-#       is_hidden: true,
-#       ability: {
-#         url: 'https://pokeapi.co/api/v2/ability/82/',
-#         name: 'gluttony',
-#       },
-#     },
-#     {
-#       slot: 2,
-#       is_hidden: false,
-#       ability: {
-#         url: 'https://pokeapi.co/api/v2/ability/56/',
-#         name: 'cute charm',
-#       },
-#     },
-#     {
-#       slot: 1,
-#       is_hidden: false,
-#       ability: {
-#         url: 'https://pokeapi.co/api/v2/ability/17/',
-#         name: 'immunity',
-#       },
-#     },
-#   ],
-#   name: 'snorlax',
-#   weight: 4600,
-# };
+snorlax_abilities = {
+  'abilities': [
+    {
+      'slot': 3,
+      'is_hidden': True,
+      'ability': {
+        'url': 'https://pokeapi.co/api/v2/ability/82/',
+        'name': 'gluttony',
+      },
+    },
+    {
+      'slot': 2,
+      'is_hidden': False,
+      'ability': {
+        'url': 'https://pokeapi.co/api/v2/ability/56/',
+        'name': 'cute charm',
+      },
+    },
+    {
+      'slot': 1,
+      'is_hidden': False,
+      'ability': {
+        'url': 'https://pokeapi.co/api/v2/ability/17/',
+        'name': 'immunity',
+      },
+    },
+  ],
+  'name': 'snorlax',
+  'weight': 4600,
+};
+
+def extract_abilities(array):
+     
+    return list(map(lambda item : item['ability']['name'], array))
 
 
+print(extract_abilities(snorlax_abilities['abilities']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 10 - Stretch Goal
