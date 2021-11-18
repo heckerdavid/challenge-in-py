@@ -43,7 +43,7 @@ def contains_and(array):
     return list(filter(lambda n : 'and' in n, array))
 
 
-print(contains_and(['panda', 'ran', 'and']))
+# print(contains_and(['panda', 'ran', 'and']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
@@ -53,7 +53,12 @@ print(contains_and(['panda', 'ran', 'and']))
 # For example, oddValues([1,2,3]) returns [1,3].
 # ------------------------------------------------------------------------------------------------ */
 
+def odd_values(array):
 
+    return list(filter(lambda n : n % 2 != 0, array))
+
+
+print(odd_values([1,2,3]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 5
