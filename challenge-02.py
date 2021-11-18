@@ -97,7 +97,12 @@ def for_each_two_to_the(array):
 # For example: charCode(['h','i']) returns [104, 105].
 # ------------------------------------------------------------------------------------------------ */
 
+def char_code(array):
 
+    return list(map(lambda n : ord(n), array))
+
+
+# print(char_code(['a', 'b', 'c', 'd', 'h', 'i']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 8 - Stretch Goal
@@ -109,6 +114,19 @@ def for_each_two_to_the(array):
 # For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 # ------------------------------------------------------------------------------------------------ */
 
+def even_test(num):
+    if num % 2 == 0:
+        return 'even'
+    else:
+        return 'odd'
+
+
+def even_odd(array):
+
+    return list(map(lambda n : 'even' if n % 2 == 0 else 'odd', array ))
+
+
+print(even_odd([1, 2, 3]))
 
 
 # /* ------------------------------------------------------------------------------------------------
