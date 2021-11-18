@@ -29,7 +29,8 @@ def add_exclamation(array):
 
     return new_array
 
-print(add_exclamation(['hello', 'world', 'now', 'in', 'python']))
+# print(add_exclamation(['hello', 'world', 'now', 'in', 'python']))
+
 
 
 # CHALLENGE 3
@@ -38,7 +39,15 @@ print(add_exclamation(['hello', 'world', 'now', 'in', 'python']))
 
 # Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 
+def all_upper_case(array):
+    new_array = []
 
+    for string in array:
+        new_array.append(string.upper())
+    
+    return new_array
+
+print(all_upper_case(['hello', 'world', 'now', 'in', 'python']))
 
 
 # CHALLENGE 4
