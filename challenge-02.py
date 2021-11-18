@@ -81,7 +81,11 @@ def for_each_two_to_the(array):
 # Write a function named mapTwoToThe that produces the same output as your forLoopTwoToThe function from challenge 4 and your forEachTwoToThe function from challenge 5, but uses map instead of a for loop or forEach.
 # ------------------------------------------------------------------------------------------------ */
 
+def for_each_two_to_the(array):
 
+    return list(map(lambda n : 2 ** n, array))
+
+# print(for_each_two_to_the([1, 2, 3, 4, 5]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 7 - Stretch Goal
