@@ -4,7 +4,15 @@
 
 # Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 
+def add_one(array):
+    new_array = []
 
+    for number in array:
+        new_array.append(number + 1)
+
+    return new_array
+
+# print(add_one([1, 2, 3, 4, 5]))
 
 
 # CHALLENGE 2
