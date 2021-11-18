@@ -29,13 +29,19 @@ def add_one(array):
     return list(map(lambda n : n + 1, array))
 
 
-print(add_one([1, 2, 3, 4, 5]))
+# print(add_one([1, 2, 3, 4, 5]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
 
 # Write a function named addQuestion that, given an array of strings, uses map to return a new array containing each string followed by a question mark character.
 # ------------------------------------------------------------------------------------------------ */
+
+def add_question(array):
+
+    return list(map(lambda string : string + '?', array))
+
+print(add_question(['hello', 'world', 'now', 'in', 'python']))
 
 
 # /* ------------------------------------------------------------------------------------------------
