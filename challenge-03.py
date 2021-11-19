@@ -73,7 +73,7 @@ def not_in_first_array(array1, array2):
     return list(filter(lambda n : n not in array1, array2))
 
 
-print(not_in_first_array([1, 2 ,3], [1,2,3,4]))
+# print(not_in_first_array([1, 2 ,3], [1,2,3,4]))
 
 
 # /* ------------------------------------------------------------------------------------------------
@@ -84,37 +84,43 @@ print(not_in_first_array([1, 2 ,3], [1,2,3,4]))
 # For example, getBaseStatGreaterThan(snorlaxData.stats, 50) will return an array containing the 'special-defense' and 'special-attack' objects.
 # ------------------------------------------------------------------------------------------------ */
 
-# const snorlaxData = {
-#   stats: [
-#     {
-#       stat: {
-#         url: 'https://pokeapi.co/api/v2/stat/6/',
-#         name: 'speed',
-#       },
-#       effort: 5,
-#       baseStat: 30,
-#     },
-#     {
-#       stat: {
-#         url: 'https://pokeapi.co/api/v2/stat/5/',
-#         name: 'special-defense',
-#       },
-#       effort: 2,
-#       baseStat: 110,
-#     },
-#     {
-#       stat: {
-#         url: 'https://pokeapi.co/api/v2/stat/4/',
-#         name: 'special-attack',
-#       },
-#       effort: 9,
-#       baseStat: 65,
-#     },
-#   ],
-#   name: 'snorlax',
-#   weight: 4600,
-# };
+snorlax_data = {
+  'stats': [
+    {
+      'stat': {
+        'url': 'https://pokeapi.co/api/v2/stat/6/',
+        'name': 'speed',
+      },
+      'effort': 5,
+      'baseStat': 30,
+    },
+    {
+      'stat': {
+        'url': 'https://pokeapi.co/api/v2/stat/5/',
+        'name': 'special-defense',
+      },
+      'effort': 2,
+      'baseStat': 110,
+    },
+    {
+      'stat': {
+        'url': 'https://pokeapi.co/api/v2/stat/4/',
+        'name': 'special-attack',
+      },
+      'effort': 9,
+      'baseStat': 65,
+    },
+  ],
+  'name': 'snorlax',
+  'weight': 4600,
+};
 
+def get_base_stat_greater_than(array, num):
+
+    return list(filter(lambda n : n['stat'] if n['baseStat'] > num else False, array))
+
+
+print(get_base_stat_greater_than(snorlax_data['stats'], 50))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 7 - Stretch Goal
