@@ -87,7 +87,7 @@ def alphabetize(array):
     return array
 
 
-print(alphabetize(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
+# print(alphabetize(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 6
@@ -102,7 +102,17 @@ print(alphabetize(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
 # ];
 # ------------------------------------------------------------------------------------------------ */
 
+def sort_by_price(array):
+    array.sort(key = lambda n : n['price'])
 
+    return array
+
+
+print(sort_by_price([
+  {'name': 'Sweatshirt', 'price': 45},
+  {'name': 'Bookmark', 'price': 2.50},
+  {'name': 'Tote bag', 'price': 15}
+]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 7 - Stretch Goal
