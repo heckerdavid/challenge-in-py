@@ -161,7 +161,7 @@ def sort_numbers_by_length(array):
     return array
 
 
-print(sort_numbers_by_length([0.2, 54782, 14, 1, -281]))
+# print(sort_numbers_by_length([0.2, 54782, 14, 1, -281]))
 
 
 # /*-----------------------------------------------------------------------------------------------
@@ -170,21 +170,30 @@ print(sort_numbers_by_length([0.2, 54782, 14, 1, -281]))
 # Write a function named sortPeople that takes in an array of Person objects, each of which has firstName, lastName, and age properties, and sorts those people by their last names. Do not worry about capitalization or first names.
 # ------------------------------------------------------------------------------------------------ */
 
-# function Person(firstName, lastName, age) {
-#   this.firstName = firstName;
-#   this.lastName = lastName;
-#   this.age = age;
-# }
 
-# const people = [
-#   new Person('Wes', 'Washington', 25),
-#   new Person('Casey', 'Codefellow', 38),
-#   new Person('Stan', 'Seattle', 67),
-# ];
+class Person:
+    def __init__(self, first_name, last_name, age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
-# const sortPeople = (arr) => {
-#   // Solution code here...
-# };
+
+people = [
+  Person('Wes', 'Washington', 25),
+  Person('Casey', 'Codefellow', 38),
+  Person('Stan', 'Seattle', 67),
+];
+for person in people:
+    print(person.last_name)
+
+def sort_people(array):
+
+    array.sort(key = lambda n : n.last_name)
+
+    return array
+
+
+print(sort_people(people))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 11 - Stretch Goal
