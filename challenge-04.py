@@ -52,7 +52,7 @@ def sort_numbers(array):
     return array
 
 
-print(sort_numbers([1,2,8,6,4,2,6,8,9,3,2]))
+# print(sort_numbers([1,2,8,6,4,2,6,8,9,3,2]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
@@ -62,7 +62,13 @@ print(sort_numbers([1,2,8,6,4,2,6,8,9,3,2]))
 # HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
 # ------------------------------------------------------------------------------------------------ */
 
+def sort_backwards(array):
+    array.sort(reverse=True)
 
+    return array
+
+
+print(sort_backwards([0,45,2,1,6,7,9,32,1,4,67,1]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 5
