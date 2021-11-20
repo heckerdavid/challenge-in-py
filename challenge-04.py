@@ -128,7 +128,8 @@ def alphabetize_better(array):
 
     return array
 
-print(alphabetize_better(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
+
+# print(alphabetize_better(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 8 - Stretch Goal
@@ -136,7 +137,14 @@ print(alphabetize_better(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
 # Write a function named sortByLength that takes in an array of strings and returns the same array, with the strings sorted by their length, lowest to highest.
 # ------------------------------------------------------------------------------------------------ */
 
+def sort_by_length(array):
 
+    array.sort(key = lambda n : len(n))
+
+    return array
+
+
+print(sort_by_length(['alphabet', 'Zebra', 'Alphabet', 'carrot', 'dog', 'paradimethalaminobynzaldihyde']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 9 - Stretch Goal
