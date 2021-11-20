@@ -11,7 +11,16 @@
 # You can assume that neither firstName nor lastName will be blank
 # ------------------------------------------------------------------------------------------------ */
 
+def print_names(array):
+    new_array = []
 
+    for person in array:
+        new_array.append(f"{person['first_name']} {person['last_name']}")
+
+    return new_array
+
+
+print(print_names([{ 'first_name':"Jane", 'last_name':"Doe" }, { 'first_name':"James", 'last_name':"Bond"}]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 2
