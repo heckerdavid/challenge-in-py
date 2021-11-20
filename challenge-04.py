@@ -108,11 +108,11 @@ def sort_by_price(array):
     return array
 
 
-print(sort_by_price([
-  {'name': 'Sweatshirt', 'price': 45},
-  {'name': 'Bookmark', 'price': 2.50},
-  {'name': 'Tote bag', 'price': 15}
-]))
+# print(sort_by_price([
+#   {'name': 'Sweatshirt', 'price': 45},
+#   {'name': 'Bookmark', 'price': 2.50},
+#   {'name': 'Tote bag', 'price': 15}
+# ]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 7 - Stretch Goal
@@ -122,7 +122,14 @@ print(sort_by_price([
 # For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, and so is ['alphabet', 'Alphabet', 'carrot', 'Zebra'].
 # ------------------------------------------------------------------------------------------------ */
 
+def alphabetize_better(array):
 
+    array.sort(key = lambda n : n.lower())
+
+    return array
+
+
+# print(alphabetize_better(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 8 - Stretch Goal
@@ -130,7 +137,14 @@ print(sort_by_price([
 # Write a function named sortByLength that takes in an array of strings and returns the same array, with the strings sorted by their length, lowest to highest.
 # ------------------------------------------------------------------------------------------------ */
 
+def sort_by_length(array):
 
+    array.sort(key = lambda n : len(n))
+
+    return array
+
+
+# print(sort_by_length(['alphabet', 'Zebra', 'Alphabet', 'carrot', 'dog', 'paradimethalaminobynzaldihyde']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 9 - Stretch Goal
@@ -140,6 +154,14 @@ print(sort_by_price([
 # For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 # ------------------------------------------------------------------------------------------------ */
 
+def sort_numbers_by_length(array):
+
+    array.sort(key = lambda n : len(str(n)))
+
+    return array
+
+
+# print(sort_numbers_by_length([0.2, 54782, 14, 1, -281]))
 
 
 # /*-----------------------------------------------------------------------------------------------
@@ -148,21 +170,30 @@ print(sort_by_price([
 # Write a function named sortPeople that takes in an array of Person objects, each of which has firstName, lastName, and age properties, and sorts those people by their last names. Do not worry about capitalization or first names.
 # ------------------------------------------------------------------------------------------------ */
 
-# function Person(firstName, lastName, age) {
-#   this.firstName = firstName;
-#   this.lastName = lastName;
-#   this.age = age;
-# }
 
-# const people = [
-#   new Person('Wes', 'Washington', 25),
-#   new Person('Casey', 'Codefellow', 38),
-#   new Person('Stan', 'Seattle', 67),
-# ];
+class Person:
+    def __init__(self, first_name, last_name, age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
-# const sortPeople = (arr) => {
-#   // Solution code here...
-# };
+
+people = [
+  Person('Wes', 'Washington', 25),
+  Person('Casey', 'Codefellow', 38),
+  Person('Stan', 'Seattle', 67),
+];
+for person in people:
+    print(person.last_name)
+
+def sort_people(array):
+
+    array.sort(key = lambda n : n.last_name)
+
+    return array
+
+
+print(sort_people(people))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 11 - Stretch Goal
