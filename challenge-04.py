@@ -68,7 +68,7 @@ def sort_backwards(array):
     return array
 
 
-print(sort_backwards([0,45,2,1,6,7,9,32,1,4,67,1]))
+# print(sort_backwards([0,45,2,1,6,7,9,32,1,4,67,1]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 5
@@ -80,7 +80,14 @@ print(sort_backwards([0,45,2,1,6,7,9,32,1,4,67,1]))
 # For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 # ------------------------------------------------------------------------------------------------ */
 
+def alphabetize(array):
 
+    array.sort()
+
+    return array
+
+
+print(alphabetize(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 6
