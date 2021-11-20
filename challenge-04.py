@@ -144,7 +144,7 @@ def sort_by_length(array):
     return array
 
 
-print(sort_by_length(['alphabet', 'Zebra', 'Alphabet', 'carrot', 'dog', 'paradimethalaminobynzaldihyde']))
+# print(sort_by_length(['alphabet', 'Zebra', 'Alphabet', 'carrot', 'dog', 'paradimethalaminobynzaldihyde']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 9 - Stretch Goal
@@ -154,6 +154,14 @@ print(sort_by_length(['alphabet', 'Zebra', 'Alphabet', 'carrot', 'dog', 'paradim
 # For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 # ------------------------------------------------------------------------------------------------ */
 
+def sort_numbers_by_length(array):
+
+    array.sort(key = lambda n : len(str(n)))
+
+    return array
+
+
+print(sort_numbers_by_length([0.2, 54782, 14, 1, -281]))
 
 
 # /*-----------------------------------------------------------------------------------------------
