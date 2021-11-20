@@ -108,11 +108,11 @@ def sort_by_price(array):
     return array
 
 
-print(sort_by_price([
-  {'name': 'Sweatshirt', 'price': 45},
-  {'name': 'Bookmark', 'price': 2.50},
-  {'name': 'Tote bag', 'price': 15}
-]))
+# print(sort_by_price([
+#   {'name': 'Sweatshirt', 'price': 45},
+#   {'name': 'Bookmark', 'price': 2.50},
+#   {'name': 'Tote bag', 'price': 15}
+# ]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 7 - Stretch Goal
@@ -122,7 +122,13 @@ print(sort_by_price([
 # For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, and so is ['alphabet', 'Alphabet', 'carrot', 'Zebra'].
 # ------------------------------------------------------------------------------------------------ */
 
+def alphabetize_better(array):
 
+    array.sort(key = lambda n : n.lower())
+
+    return array
+
+print(alphabetize_better(['alphabet', 'Zebra', 'Alphabet', 'carrot']))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 8 - Stretch Goal
