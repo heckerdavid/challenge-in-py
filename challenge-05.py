@@ -20,7 +20,7 @@ def print_names(array):
     return new_array
 
 
-print(print_names([{ 'first_name':"Jane", 'last_name':"Doe" }, { 'first_name':"James", 'last_name':"Bond"}]))
+# print(print_names([{ 'first_name':"Jane", 'last_name':"Doe" }, { 'first_name':"James", 'last_name':"Bond"}]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 2
@@ -29,7 +29,11 @@ print(print_names([{ 'first_name':"Jane", 'last_name':"Doe" }, { 'first_name':"J
 
 # ------------------------------------------------------------------------------------------------ */
 
+def add_values(array):
+    return sum(array)
 
+
+print(add_values([1, 2, 3, 4, 5]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
