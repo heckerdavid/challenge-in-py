@@ -56,7 +56,8 @@ def join_array(array):
     return ' '.join(array)
 
 
-print(join_array(['hello', 'world', 'now', 'in', 'python']))
+# print(join_array(['hello', 'world', 'now', 'in', 'python']))
+
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
 
@@ -79,6 +80,21 @@ print(join_array(['hello', 'world', 'now', 'in', 'python']))
 #   }
 #   return result;
 # };
+
+def how_much_pencil(string):
+    result_array = []
+
+    result_array.append(string)
+
+    for letter in string:
+        string = string[1:]
+        result_array.append(string)
+
+    return result_array
+
+
+print(how_much_pencil('Welcome'))
+
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 5
