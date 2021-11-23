@@ -4,23 +4,28 @@
 
 # Write a function named getNames that, given an array of people objects, uses map to return an array of names reversed.
 
-# For example:
-# [
-# {
-#   name: 'lloyd',
-#   age: 32,
-#   shoeSize: 12
-# },
-# {
-#   name: 'jamie',
-#   age: 21,
-#   shoeSize: 8
-# }
-# ]
+example = [
+{
+  'name': 'lloyd',
+  'age': 32,
+  'shoeSize': 12
+},
+{
+  'name': 'jamie',
+  'age': 21,
+  'shoeSize': 8
+}
+]
 
 # Returns: ['dyoll', 'eimaj'];
 # ------------------------------------------------------------------------------------------------ */
 
+def get_names(array):
+    
+    return list(map(lambda n : n['name'][::-1], array))
+
+
+print(get_names(example))
 
 
 # /* ------------------------------------------------------------------------------------------------
@@ -35,7 +40,7 @@ def the_end(string):
     return f'{string} The end.'
 
 
-print(the_end('hello'))
+# print(the_end('hello'))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
