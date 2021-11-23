@@ -4,23 +4,28 @@
 
 # Write a function named getNames that, given an array of people objects, uses map to return an array of names reversed.
 
-# For example:
-# [
-# {
-#   name: 'lloyd',
-#   age: 32,
-#   shoeSize: 12
-# },
-# {
-#   name: 'jamie',
-#   age: 21,
-#   shoeSize: 8
-# }
-# ]
+example = [
+{
+  'name': 'lloyd',
+  'age': 32,
+  'shoeSize': 12
+},
+{
+  'name': 'jamie',
+  'age': 21,
+  'shoeSize': 8
+}
+]
 
 # Returns: ['dyoll', 'eimaj'];
 # ------------------------------------------------------------------------------------------------ */
 
+def get_names(array):
+
+    return list(map(lambda n : n['name'][::-1], array))
+
+
+# print(get_names(example))
 
 
 # /* ------------------------------------------------------------------------------------------------
@@ -35,7 +40,7 @@ def the_end(string):
     return f'{string} The end.'
 
 
-print(the_end('hello'))
+# print(the_end('hello'))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
@@ -45,12 +50,21 @@ print(the_end('hello'))
 # Do not use a return statement.
 
 # For example:
-# const a = [1, 2, 3];
+a = [1, 2, 3];
 # appendFirstToLast(a);
 # console.log(a) prints [1, 2, 3, 1]
 # ------------------------------------------------------------------------------------------------ */
 
 # const appendFirstToLast = arr => arr.push(arr[0]);
+
+def append_first_to_last(array):
+
+    array.append(array[0])
+
+    return array
+
+
+# print(append_first_to_last(a))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
@@ -62,12 +76,18 @@ print(the_end('hello'))
 # Do not use a return statement.
 
 # For example:
-# const octavia = { fullName: 'Octavia Estelle Butler' };
+octavia = { 'fullName': 'Octavia Estelle Butler' };
 # addBirthYearProperty(octavia, 1947);
 # console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 # ------------------------------------------------------------------------------------------------ */
 
+def year_born(obj, year):
 
+    obj['year_born'] = year
+
+    return obj
+
+print(year_born(octavia, 1999))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 5 - Stretch Goal
