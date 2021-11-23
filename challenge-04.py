@@ -183,8 +183,6 @@ people = [
   Person('Casey', 'Codefellow', 38),
   Person('Stan', 'Seattle', 67),
 ];
-for person in people:
-    print(person.last_name)
 
 def sort_people(array):
 
@@ -193,7 +191,7 @@ def sort_people(array):
     return array
 
 
-print(sort_people(people))
+# print(sort_people(people))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 11 - Stretch Goal

@@ -120,7 +120,7 @@ def get_base_stat_greater_than(array, num):
     return list(filter(lambda n : n['stat'] if n['baseStat'] > num else False, array))
 
 
-print(get_base_stat_greater_than(snorlax_data['stats'], 50))
+# print(get_base_stat_greater_than(snorlax_data['stats'], 50))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 7 - Stretch Goal
@@ -130,7 +130,9 @@ print(get_base_stat_greater_than(snorlax_data['stats'], 50))
 # For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 'special-attack'].
 # ------------------------------------------------------------------------------------------------ */
 
+def get_base_stat_name(array, num):
 
+    return list(filter(lambda n : n['stat'] if n['baseStat'] > num else False, array))
 
 
 # /* ------------------------------------------------------------------------------------------------
