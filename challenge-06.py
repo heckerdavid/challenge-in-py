@@ -21,11 +21,11 @@ example = [
 # ------------------------------------------------------------------------------------------------ */
 
 def get_names(array):
-    
+
     return list(map(lambda n : n['name'][::-1], array))
 
 
-print(get_names(example))
+# print(get_names(example))
 
 
 # /* ------------------------------------------------------------------------------------------------
@@ -50,12 +50,21 @@ def the_end(string):
 # Do not use a return statement.
 
 # For example:
-# const a = [1, 2, 3];
+a = [1, 2, 3];
 # appendFirstToLast(a);
 # console.log(a) prints [1, 2, 3, 1]
 # ------------------------------------------------------------------------------------------------ */
 
 # const appendFirstToLast = arr => arr.push(arr[0]);
+
+def append_first_to_last(array):
+
+    array.append(array[0])
+    
+    return array
+
+
+print(append_first_to_last(a))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
