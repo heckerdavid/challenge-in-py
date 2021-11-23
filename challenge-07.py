@@ -32,7 +32,7 @@ def sort_star_wars_characters(array):
     return array
 
 
-print(sort_star_wars_characters(starWarsPeople))
+# print(sort_star_wars_characters(starWarsPeople))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 2
@@ -52,7 +52,11 @@ print(sort_star_wars_characters(starWarsPeople))
 # ------------------------------------------------------------------------------------------------ */
 
 # const joinArray = arr => arr.join(' ');
+def join_array(array):
+    return ' '.join(array)
 
+
+print(join_array(['hello', 'world', 'now', 'in', 'python']))
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
 
