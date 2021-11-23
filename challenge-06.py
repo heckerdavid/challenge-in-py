@@ -60,11 +60,11 @@ a = [1, 2, 3];
 def append_first_to_last(array):
 
     array.append(array[0])
-    
+
     return array
 
 
-print(append_first_to_last(a))
+# print(append_first_to_last(a))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
@@ -76,12 +76,18 @@ print(append_first_to_last(a))
 # Do not use a return statement.
 
 # For example:
-# const octavia = { fullName: 'Octavia Estelle Butler' };
+octavia = { 'fullName': 'Octavia Estelle Butler' };
 # addBirthYearProperty(octavia, 1947);
 # console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 # ------------------------------------------------------------------------------------------------ */
 
+def year_born(obj, year):
 
+    obj['year_born'] = year
+
+    return obj
+
+print(year_born(octavia, 1999))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 5 - Stretch Goal
