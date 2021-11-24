@@ -33,7 +33,7 @@ def add_values(array):
     return sum(array)
 
 
-print(add_values([1, 2, 3, 4, 5]))
+# print(add_values([1, 2, 3, 4, 5]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
@@ -47,7 +47,7 @@ print(add_values([1, 2, 3, 4, 5]))
 
 # ------------------------------------------------------------------------------------------------ */
 
-# const addPurchases = arr => arr.reduce((acc, item) => acc + item.purchasePrice, 0);
+# def add_purchase(array):
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
@@ -56,6 +56,9 @@ print(add_values([1, 2, 3, 4, 5]))
 
 # Note: You may not use the array's built-in length property.
 # ------------------------------------------------------------------------------------------------ */
+
+
+# def count_number_of_elements(array):
 
 
 

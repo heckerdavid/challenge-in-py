@@ -87,7 +87,7 @@ def year_born(obj, year):
 
     return obj
 
-print(year_born(octavia, 1999))
+# print(year_born(octavia, 1999))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 5 - Stretch Goal
