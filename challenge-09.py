@@ -50,17 +50,17 @@ def check_values(obj, value):
     return value in obj.values()
 
 
-print(check_values(courseInfo, 'Code 301'))
+# print(check_values(courseInfo, 'Code 301'))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
 
 # You are given an object with names and their coresponding phone numbers that looks like this:
-# {
-#   'Grace Hopper': '222-303-5938',
-#   'Ada Lovelace': '222-349-9842',
-#   'Alan Turing': '222-853-5933'
-# }
+data = {
+  'Grace Hopper': '222-303-5938',
+  'Ada Lovelace': '222-349-9842',
+  'Alan Turing': '222-853-5933'
+}
 
 # HR has asked you to change the data to make it easier to print so that it looks like this:
 # [
@@ -78,6 +78,18 @@ print(check_values(courseInfo, 'Code 301'))
 #   }
 #   return arr;
 # };
+
+def update_numbers(obj):
+    new_arr = []
+    keys = list(obj.keys())
+    values = list(obj.values())
+    for i in range(len(keys)):
+        new_arr.append(f'{keys[i]}: {values[i]}')
+
+    return new_arr
+
+
+print(update_numbers(data))
 
 
 
