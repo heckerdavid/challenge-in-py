@@ -14,7 +14,7 @@ def max_in_array(array):
     return array[-1]
 
 
-print(max_in_array([1,4,6,3,2,4,67,78,4,2,3,4,6]))
+# print(max_in_array([1,4,6,3,2,4,67,78,4,2,3,4,6]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 2
@@ -23,12 +23,18 @@ print(max_in_array([1,4,6,3,2,4,67,78,4,2,3,4,6]))
 
 # For example: (['name', 'duration', 'topics', 'finalExam']).
 # ------------------------------------------------------------------------------------------------ */
-# const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
-#   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
-#   finalExam: true
-# };
+courseInfo = { 'name': 'Code 301', 'duration': { 'dayTrack': '4 weeks', 'eveningTrack': '8 weeks'},
+  'topics': ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
+  'finalExam': True
+};
 
 # const getCourseKeys = obj => Object.keys(obj);
+def get_course_keys(array):
+
+    return array.keys()
+
+
+print(get_course_keys(courseInfo))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
