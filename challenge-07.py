@@ -93,7 +93,7 @@ def how_much_pencil(string):
     return result_array
 
 
-print(how_much_pencil('Welcome'))
+# print(how_much_pencil('Welcome'))
 
 
 # /* ------------------------------------------------------------------------------------------------
@@ -105,7 +105,10 @@ print(how_much_pencil('Welcome'))
 # ------------------------------------------------------------------------------------------------ */
 
 # const wordsToCharList = arr => arr.split('');
+def words_to_char_list(string):
+    return [char for char in string]
 
+# print(words_to_char_list('fuckoffmate'))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 6
