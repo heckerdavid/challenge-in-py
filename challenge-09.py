@@ -34,7 +34,7 @@ def get_course_keys(array):
     return array.keys()
 
 
-print(get_course_keys(courseInfo))
+# print(get_course_keys(courseInfo))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
@@ -45,6 +45,12 @@ print(get_course_keys(courseInfo))
 # ------------------------------------------------------------------------------------------------ */
 
 # const checkValues = (obj, value) => Object.values(obj).includes(value);
+
+def check_values(obj, value):
+    return value in obj.values()
+
+
+print(check_values(courseInfo, 'Code 301'))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 4
