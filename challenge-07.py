@@ -48,7 +48,7 @@ def remove_three(idx, array):
     del array[idx:idx + 3]
     return array
 
-print(remove_three(2, [1,2,3,4,5,6]))
+# print(remove_three(2, [1,2,3,4,5,6]))
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 3
