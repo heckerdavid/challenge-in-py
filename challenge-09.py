@@ -77,7 +77,7 @@ data = {
 #     arr.push(`${pair[0]}: ${pair[1]}`);
 #   }
 #   return arr;
-# };
+# };4.""
 
 def update_numbers(obj):
     new_arr = []
@@ -89,7 +89,7 @@ def update_numbers(obj):
     return new_arr
 
 
-print(update_numbers(data))
+# print(update_numbers(data))
 
 
 
@@ -99,48 +99,48 @@ print(update_numbers(data))
 # Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.
 # ------------------------------------------------------------------------------------------------ */
 
-# const characters = [
-#   {
-#     name: 'Eddard',
-#     spouse: 'Catelyn',
-#     children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
-#     house: 'Stark',
-#   },
-#   {
-#     name: 'Jon',
-#     spouse: 'Lysa',
-#     children: ['Robin'],
-#     house: 'Arryn',
-#   },
-#   {
-#     name: 'Cersei',
-#     spouse: 'Robert',
-#     children: ['Joffrey', 'Myrcella', 'Tommen'],
-#     house: 'Lannister',
-#   },
-#   {
-#     name: 'Daenarys',
-#     spouse: 'Khal Drogo',
-#     children: ['Drogon', 'Rhaegal', 'Viserion'],
-#     house: 'Targaryen',
-#   },
-#   {
-#     name: 'Mace',
-#     spouse: 'Alerie',
-#     children: ['Margaery', 'Loras'],
-#     house: 'Tyrell',
-#   },
-#   {
-#     name: 'Sansa',
-#     spouse: 'Tyrion',
-#     house: 'Stark',
-#   },
-#   {
-#     name: 'Jon',
-#     spouse: null,
-#     house: 'Snow',
-#   },
-# ];
+characters = [
+  {
+    'name': 'Eddard',
+    'spouse': 'Catelyn',
+    'children': ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
+    'house': 'Stark',
+  },
+  {
+    'name': 'Jon',
+    'spouse': 'Lysa',
+    'children': ['Robin'],
+    'house': 'Arryn',
+  },
+  {
+    'name': 'Cersei',
+    'spouse': 'Robert',
+    'children': ['Joffrey', 'Myrcella', 'Tommen'],
+    'house': 'Lannister',
+  },
+  {
+    'name': 'Daenarys',
+    'spouse': 'Khal Drogo',
+    'children': ['Drogon', 'Rhaegal', 'Viserion'],
+    'house': 'Targaryen',
+  },
+  {
+    'name': 'Mace',
+    'spouse': 'Alerie',
+    'children': ['Margaery', 'Loras'],
+    'house': 'Tyrell',
+  },
+  {
+    'name': 'Sansa',
+    'spouse': 'Tyrion',
+    'house': 'Stark',
+  },
+  {
+    'name': 'Jon',
+    'spouse': False,
+    'house': 'Snow',
+  },
+];
 
 # const getHouses = arr => {
 #   let houses = [];
@@ -150,10 +150,20 @@ print(update_numbers(data))
 #   return houses;
 # };
 
+def get_houses(array):
+    new_array = []
+
+    for person in array:
+        new_array.append(person['house'])
+
+    return new_array
+
+print(get_houses(characters))
+
 # /*------------------------------------------------------------------------------------------------
 # CHALLENGE 6
 
-# Write a function named hasChildrenValues that uses Object.values to determine if any given character in the data set has children.
+# Write a function named hasChildrenValues that uses Object.values to determine if any given character in the data set has 'children'.
 
 # This function should take in an array of data and a character name and return a Boolean.
 
