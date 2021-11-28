@@ -1,4 +1,4 @@
-
+import functools
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 1 - Review
 
@@ -158,7 +158,7 @@ def get_houses(array):
 
     return new_array
 
-print(get_houses(characters))
+# print(get_houses(characters))
 
 # /*------------------------------------------------------------------------------------------------
 # CHALLENGE 6
@@ -181,6 +181,19 @@ print(get_houses(characters))
 #   }
 # };
 
+# def has_children_values(array, name):
+#     select = False
+#     for char in array:
+#         if char['name'] == name:
+#             select = char
+#             print(char)
+
+
+#     return 
+
+
+# print(has_children_values(characters, 'Cersai'))
+
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 7 - Stretch Goal
 
@@ -202,6 +215,21 @@ print(get_houses(characters))
 # const totalCharacters = (arr) => {
 #   // Solution code here...
 # };
+def total_characters(array):
+    total = 0
+    for char in array:
+        total += 1
+        if char['spouse']:
+            total += 1
+        try:
+            if char['children']:
+                total += len(char['children'])
+        except KeyError:
+            pass
+    return total
+
+print(total_characters(characters))
+
 
 # /* ------------------------------------------------------------------------------------------------
 # CHALLENGE 9 - Stretch Goal
